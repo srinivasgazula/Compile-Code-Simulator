@@ -1,0 +1,11 @@
+module sample (N1,N2,N4); 
+input N1,N2,N6,N7; 
+
+output N4; 
+wire N5; 
+//Gates in the module 
+AND2X1 AND_1 (.Y(N5),.A(N1),.B(N2)); 
+INVX1 INV_1 (.Y(N4),.A(N5));
+NAND2X1 NAND_1 (.Y(N8),.A(N6),.B(N7));
+OR2X1 OR_1 (.Y(N9),.A(N4),.B(N8)); 
+endmodule
